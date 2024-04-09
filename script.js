@@ -65,7 +65,8 @@ const getImages = (apiURL) => {
         generateHTML(data.photos);
         loadMoreBtn.innerText = "Load More";
         loadMoreBtn.classList.remove("disabled");
-    }).catch(() => alert("Failed to load images!"));
+    })
+    // .catch(() => alert("Failed to load images!"));
 }
 
 const loadMoreImages = () => {
